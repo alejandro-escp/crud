@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+    <H1>USUARIOS</H1>
+    <form id="usuarios">
+        <input type="hidden" id="usuarios">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        
+        <label for="cedula">cedula:</label>
+        <input type="text" id="cedula" required>
+
+        <label for="correo">correo:</label>
+        <input type="text" id="correo" required>
+
+        <label for="telefono">telefono:</label>
+        <input type="text" id="telefono" required>
+        
+        <button type="submit">Guardar</button>
+    
+    </form>
+
+    <form id="buscar">
+        
+        <label for="buscarcc">cedula:</label>
+        <input type="text" id="buscarcc" required>
+
+        <button type="submit">Buscar</button>
+    </form>
+
+    <form id="eliminar">
+       
+        <label for="eliminarcc">cedula:</label>
+        <input type="text" id="eliminarcc" required>
+
+        <button type="submit">Eliminar</button>
+    </form>
+
+    <form id="actualizar">
+ 
+        <label for="actualizarcc">cedula:</label>
+        <input type="text" id="actualizarcc" required>
+
+        <button type="submit">Actualizar</button>
+    </form>
+
+    <h2>Usuarios </h2>
+    <ul id="UsuariosList"></ul>
+    <script src="crud.js"></script>
+</body>
+</html>
